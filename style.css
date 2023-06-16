@@ -1,0 +1,28 @@
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* This makes it center vertically, adjust as needed */
+}
+
+
+.button {
+    display: inline-block;
+    padding: 0.6em 1.7em;
+    border: 0.1em solid hsl(0, 0%, 16%);
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Hind', sans-serif;
+    color: hsl(0, 0%, 16%);
+    text-align: center;
+    transition: all 0.2s;
+}
+  
+@media (max-width: 600px) {
+    .button {
+        padding: 0.3em 0.85em;
+        font-size: 0.8em;
+    }
+}

@@ -1,0 +1,15 @@
+.text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    resize: both;
+    overflow: auto;
+}
+
+.text {
+    max-width: 90%;
+    font-size: 3em;
+    color: hsl(0, 0%, 16%);
+}

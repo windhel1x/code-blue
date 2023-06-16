@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>to doc 🔬</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300&family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/balloon-css/balloon.min.css">
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="message.css">
+</head>
+<body>
+    <div class="text-container">
+        <p class="text" id="animated-text"></p>
+    </div>
+    
+
+    <script>
+        var text = 'i love you, erth 💖';
+        var speed = 100; // Speed of the typing animation in milliseconds
+        var i = 0;
+        var container = document.getElementById('animated-text');
+
+        function typeWriter() {
+            if (i < text.length) {
+                container.innerHTML += text.charAt(i);
+                i++;
+            setTimeout(typeWriter, speed);
+    }
+}
+
+        typeWriter();
+    </script>
+</body>
+</html>
